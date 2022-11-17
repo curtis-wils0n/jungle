@@ -1,14 +1,17 @@
 Rails.application.routes.draw do
 
-  namespace :admin do
-    get 'categories/index'
-    get 'categories/new'
-    get 'categories/create'
-    get 'categories/destroy'
-  end
+  # Send naked URL to index
   root to: 'products#index'
 
-  get '/about', to: 'about#index'
+  get '/about' => 'about#index'
+
+  get '/signup' => 'users#new'
+  post '/users' => 'users#create'
+
+  get '/login' => 'sessions#new'
+  post '/login' => 'sessions#create'
+  get '/logout' => 'sessions#destroy'
+
   resources :products, only: [:index, :show]
   resources :categories, only: [:show]
 
