@@ -1,6 +1,6 @@
 describe('Jungle Home Page', () => {
   
-  it ('retrieves the home page', () => {
+  it('retrieves the home page', () => {
     cy.visit('/');
   });
   
@@ -12,4 +12,4 @@ describe('Jungle Home Page', () => {
     cy.get('.products article').should('have.length', 2);
   });
 
-})
+});
