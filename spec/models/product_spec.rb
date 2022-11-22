@@ -16,7 +16,7 @@ RSpec.describe Product, type: :model do
       expect(@product.valid?).to be true
     end
     
-    it 'has a name' do
+    it 'must include a name' do
       @product = Product.new
       @category = Category.new
 
@@ -34,7 +34,7 @@ RSpec.describe Product, type: :model do
       expect(@product.errors.full_messages).to be_empty
     end
 
-    it 'has a price' do
+    it 'must include a price' do
       @product = Product.new
       @category = Category.new
 
@@ -52,7 +52,7 @@ RSpec.describe Product, type: :model do
       expect(@product.errors.full_messages).to be_empty
     end
 
-    it 'has a quantity' do
+    it 'must include a quantity' do
       @product = Product.new
       @category = Category.new
 
@@ -70,7 +70,7 @@ RSpec.describe Product, type: :model do
       expect(@product.errors.full_messages).to be_empty
     end
 
-    it 'has a category' do
+    it 'must include a category' do
       @product = Product.new
       @category = Category.new
 
