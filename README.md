@@ -6,11 +6,11 @@ Jungle is a mini e-commerce proof-of-concept application built with Rails 6.1
 
 ## Screenshots
 
-![Jungle Splash]()
+![Jungle Splash](https://github.com/curtis-wils0n/jungle/blob/main/docs/images/jungle-splash.png?raw=true)
 
-![Jungle Products]()
+![Jungle Products](https://github.com/curtis-wils0n/jungle/blob/main/docs/images/jungle-products.png?raw=true)
 
-![Jungle Admin]()
+![Jungle Admin](https://github.com/curtis-wils0n/jungle/blob/main/docs/images/jungle-admin.png?raw=true)
 
 ## Setup
 
